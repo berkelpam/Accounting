@@ -15,5 +15,9 @@ public void setSavingsAccount(SavingsAccount oSavingsAccount, long amount) {
 	this.oSavingsAccount = oSavingsAccount;
 	this.oSavingsAccount.setAmount(amount);
 }
+
+public void DepositAmount(long Amount) {
+	this.oSavingsAccount.deposit(Amount);
+}
    
 }

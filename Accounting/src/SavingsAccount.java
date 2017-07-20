@@ -1,7 +1,19 @@
 public class SavingsAccount extends Account
 {
-   SavingsAccount(long amount)
+private  SavingsAccount oSavingsAccount;
+	
+   public SavingsAccount(long amount)
    {
       super("savings", amount);
    }
+
+public SavingsAccount getSavingsAccount() {
+	return oSavingsAccount;
+}
+
+public void setSavingsAccount(SavingsAccount oSavingsAccount, long amount) {
+	this.oSavingsAccount = oSavingsAccount;
+	this.oSavingsAccount.setAmount(amount);
+}
+   
 }
